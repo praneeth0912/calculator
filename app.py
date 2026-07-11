@@ -7,3 +7,5 @@ result = num1 + num2
 
 # Step 3: Print the result directly to the VS Code terminal
 print(f"The answer is: {result}")
+
+print(f"The answer is: {result}")
