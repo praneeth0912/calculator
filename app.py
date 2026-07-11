@@ -1,11 +1,19 @@
-# Step 1: Create two variables and get user input
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
+# Get the two numbers from the user
+A = float(input("Enter value for A: "))
+B = float(input("Enter value for B: "))
 
-# Step 2: Add the two variables together
-result = num1 + num2
+# Ask the user to choose the operation
+print("\nChoose an operation:")
+print("1. Addition (+)")
+print("2. Subtraction (-)")
+choice = input("Enter your choice (1 or 2): ")
 
-# Step 3: Print the result directly to the VS Code terminal
-print(f"The answer is: {result}")
-
-print(f"The answer is: {result}")
+# Perform the calculation based on the choice
+if choice == '1':
+    result = A + B
+    print(f"\nResult: {A} + {B} = {result}")
+elif choice == '2':
+    result = A - B
+    print(f"\nResult: {A} - {B} = {result}")
+else:
+    print("\nInvalid choice! Please run the program again and select 1 or 2.")
