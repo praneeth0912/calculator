@@ -1,23 +1,28 @@
 while True:
-    # Get the two numbers from the user
+    # Get three numbers from the user
     A = float(input("Enter value for A: "))
     B = float(input("Enter value for B: "))
+    C = float(input("Enter value for C: "))
 
     # Ask the user to choose the operation
     print("\nChoose an operation:")
-    print("1. Subtraction (-)")
-    print("2. Subtraction (*)")
-    choice = input("Enter your choice (1 or 2): ")
+    print("1. Addition (+)")
+    print("2. Subtraction (-)")
+    print("3. Multiplication (*)")
+    choice = input("Enter your choice (1, 2, or 3): ")
 
     # Perform the calculation based on the choice
     if choice == '1':
-        result = A - B
-        print(f"\nResult: {A} - {B} = {result}")
+        result = A + B + C
+        print(f"\nResult: {A} + {B} + {C} = {result}")
     elif choice == '2':
-        result = A * B
-        print(f"\nResult: {A} * {B} = {result}")
+        result = A - B - C
+        print(f"\nResult: {A} - {B} - {C} = {result}")
+    elif choice == '3':
+        result = A * B * C
+        print(f"\nResult: {A} * {B} * {C} = {result}")
     else:
-        print("\nInvalid choice! Please select 1 or 2.")
+        print("\nInvalid choice! Please select 1, 2, or 3.")
 
     # Ask the user if they want to perform another operation
     print("\n" + "-"*30)
