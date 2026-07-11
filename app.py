@@ -6,7 +6,8 @@ B = float(input("Enter value for B: "))
 print("\nChoose an operation:")
 print("1. Addition (+)")
 print("2. Subtraction (-)")
-choice = input("Enter your choice (1 or 2): ")
+print("3. Multiplication (*)")
+choice = input("Enter your choice (1, 2, or 3): ")
 
 # Perform the calculation based on the choice
 if choice == '1':
@@ -15,5 +16,8 @@ if choice == '1':
 elif choice == '2':
     result = A - B
     print(f"\nResult: {A} - {B} = {result}")
+elif choice == '3':
+    result = A * B
+    print(f"\nResult: {A} * {B} = {result}")
 else:
-    print("\nInvalid choice! Please run the program again and select 1 or 2.")
+    print("\nInvalid choice! Please run the program again and select 1, 2, or 3.")
